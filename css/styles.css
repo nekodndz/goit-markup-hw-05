@@ -798,6 +798,11 @@ img {
   outline: transparent;
   transform: border-color 250ms ease;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 }
 .modal-check-text {
   color: #8e8f99;
