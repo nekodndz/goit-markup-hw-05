@@ -870,7 +870,7 @@ img {
   border: none;
   color: var(--white, #fff);
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -887,6 +887,7 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 165px;
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
@@ -905,6 +906,11 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #ffffff;
 }
 .footer-sm {
   margin-right: 96px;
@@ -923,7 +929,7 @@ img {
   gap: 24px;
 }
 .footer-input::placeholder {
-  color: var(--white, #fff);
+  color #ffffff;
   font-family: Roboto;
   font-size: 12px;
   line-height: 2; /* 200% */
