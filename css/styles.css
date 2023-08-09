@@ -806,6 +806,8 @@ img {
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .modal-check-link {
   color: #4d5ae5;
@@ -814,5 +816,27 @@ img {
   width: 16px;
   height: 16px;
   stroke-width: 1px;
+  fill: transparent;
   stroke: rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.checkbox-click {
+  display: none;
+  margin-right: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.modal-check:checked ~ .modal-check-text .checkbox {
+  display: none;
+}
+
+.modal-check:checked ~ .modal-check-text .checkbox-click {
+  display: inline-block;
 }
