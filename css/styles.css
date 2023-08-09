@@ -879,7 +879,6 @@ img {
   background: #4d5ae5;
   padding: 8px 24px;
   display: flex;
-  gap: 16px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -896,6 +895,7 @@ img {
 .subscribe-icon {
   fill: #ffffff;
   display: block;
+  margin-left: 16px;
 }
 
 .footer-input {
