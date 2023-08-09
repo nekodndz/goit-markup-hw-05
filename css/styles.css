@@ -836,7 +836,33 @@ img {
 .modal-check:checked ~ .modal-check-text .checkbox {
   display: none;
 }
-
 .modal-check:checked ~ .modal-check-text .checkbox-click {
   display: inline-block;
+}
+.modal-form-btn {
+  width: 169px;
+  height: auto;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 24px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: #404bbf;
 }
