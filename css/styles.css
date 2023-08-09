@@ -798,3 +798,21 @@ img {
   transform: border-color 250ms ease;
   resize: none;
 }
+.modal-check-text {
+  color: #8e8f99;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+}
+.modal-check-link {
+  color: #4d5ae5;
+}
+.checkbox {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1px;
+  stroke: rgba(46, 47, 66, 0.4);
+}
