@@ -804,7 +804,8 @@ img {
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
 }
-.modal-comment:hover {
+.modal-comment:hover,
+.modal-comment:focus {
   border-color: #4D5AE5;
 }
 .modal-check-text {
@@ -819,6 +820,9 @@ img {
 }
 .modal-check-link {
   color: #4d5ae5;
+}
+.modal-field-check {
+  margin-bottom: 24px;
 }
 .checkbox-label {
   display: inline-flex;
@@ -847,6 +851,7 @@ position: absolute;
   transform: translateY(-50%);
 }
 .privacy-text {
+display: inline-flex;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
