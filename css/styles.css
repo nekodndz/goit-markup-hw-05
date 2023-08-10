@@ -865,7 +865,8 @@ position: absolute;
   background-color: #404bbf;
   border: none; 
   fill: #F4F4FD;
-
+stroke-width: 1px;
+stroke: var(--ocean, #404BBF);
 }
 .modal-form-btn {
   width: 169px;
