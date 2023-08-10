@@ -808,61 +808,45 @@ img {
 .modal-comment:focus {
   border-color: #4D5AE5;
 }
+/*----------------checkbox----------------*/
 .modal-check-text {
-  color: #8e8f99;
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  position: relative;
+  color: #8E8F99;
+font-family: Roboto;
+font-size: 12px;
+line-height: 1.17; /* 116.667% */
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
 }
 .modal-check-link {
-  color: #4d5ae5;
+  color: #4D5AE5;
+  line-height: 1.33;
+  margin-left: 4px;
 }
-.modal-field-check {
-  margin-bottom: 24px;
-}
-.checkbox-label {
-  display: inline-flex;
+.modal-check-text span {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.40);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: transparent;
+  margin-right: 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-  margin-right: 8px;
+  stroke-width: 4px;
+  fill: transparent;
+  transition-property: background-color, border, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-icon {
-  display: none;
-  fill: var(--cloud, #F4F4FD);
-stroke-width: 1px;
-stroke: #000;
-position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
+.modal-check:checked + .modal-check-text span {
+  background-color: #404BBF;
+  border: none;
+  stroke: #000000;
 }
-.privacy-text {
-display: inline-flex;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 24px;
-}
-.modal-check:checked ~ .modal-check-text .checkbox-label .checkbox-icon {
-  display: inline-block;
-}
-.modal-check:checked ~ .modal-check-text .checkbox-label {
-  background-color: #404bbf;
-  border: none; 
-  fill: #F4F4FD;
-stroke-width: 1px;
-stroke: var(--ocean, #404BBF);
-}
+
+
+/*----------------modal-btn---------------*/
 .modal-form-btn {
   min-width: 169px;
   height: auto;
@@ -890,6 +874,7 @@ stroke: var(--ocean, #404BBF);
 .modal-form-btn:focus {
   background-color: #404bbf;
 }
+/*---------------footer-subscribe----------------*/
 .subscribe-btn {
   border: none;
   color: var(--white, #fff);
