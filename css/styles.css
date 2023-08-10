@@ -815,24 +815,38 @@ img {
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
 }
 .modal-check-link {
   color: #4d5ae5;
 }
-.checkbox {
+.checkbox-label {
   width: 16px;
   height: 16px;
-  stroke-width: 1px;
-  fill: transparent;
-  stroke: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
+fill: transparent;
+align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  position: relative;
+
+}
+.checkbox {
   margin-right: 8px;
   display: inline-block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+.privacy-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
 }
 .checkbox-click {
   display: none;
@@ -879,7 +893,7 @@ img {
   border: none;
   color: var(--white, #fff);
   text-align: center;
-  font-family: "Roboto", sans-serif
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
