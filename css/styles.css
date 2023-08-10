@@ -778,6 +778,9 @@ img {
 .modal-field {
   margin-bottom: 8px;
 }
+.comment-field {
+  margin-bottom: 16px;
+}
 .modal-form-icon {
   fill: #2e2f42;
   position: absolute;
