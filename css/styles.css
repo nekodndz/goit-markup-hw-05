@@ -861,10 +861,11 @@ position: absolute;
 .modal-check:checked ~ .modal-check-text .checkbox-label .checkbox-icon {
   display: inline-block;
 }
-.modal-check:checked + .checkbox-label {
-  fill: var(--ocean, #404BBF);
-stroke-width: 1px;
-stroke: var(--ocean, #404BBF);
+.modal-check:checked ~ .modal-check-text .checkbox-label {
+  background-color: #404bbf;
+  border: none; 
+  fill: #F4F4FD;
+
 }
 .modal-form-btn {
   width: 169px;
