@@ -831,13 +831,7 @@ img {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  position: relative;
-}
-.checkbox-label {
-  stroke-width: 1px;
-stroke: rgba(46, 47, 66, 0.40);
   margin-right: 8px;
-  display: inline-block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -869,11 +863,11 @@ stroke-width: 1px;
 stroke: var(--ocean, #404BBF);
 }
 .modal-form-btn {
-  width: 169px;
+  min-width: 169px;
   height: auto;
   color: var(--white, #fff);
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
